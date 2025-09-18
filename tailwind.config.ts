@@ -84,11 +84,34 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					from: {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					to: {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'hover-scale': {
+					from: {
+						transform: 'scale(1)'
+					},
+					to: {
+						transform: 'scale(1.02)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out',
+				'hover-scale': 'hover-scale 0.2s ease-out'
+			},
+			fontFamily: {
+				'sans': ['Montserrat', 'sans-serif']
 			}
 		}
 	},
